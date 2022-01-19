@@ -31,13 +31,13 @@ function Quote (){
 
 
 function App() {
-  const url="twitter.com";
+  const url="twitter.com/intent/tweet";
   
   return (
     
     <div id="quote-box">
       <Quote/>
-      <a href={url} target="_blank">tweet this quote</a>
+      <a href={url} target="_blank" id="tweet-quote">tweet this quote</a>
       <button type="button" id="new-quote">next quote</button>
     </div>
   );
