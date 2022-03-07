@@ -12,7 +12,7 @@ function Quote (){
   let url
 
   return(
-    <div id="quoteBox">
+    <div id="quote-box">
       <section className="quoteSection">
       {newQuotes.map((q)=>{
         const {id,quote,author}=q;
@@ -28,7 +28,7 @@ function Quote (){
       </section>
       <div className="shareSection">
         <a  href={url} target="blank" id="tweet-quote"><img className='twitLogo' src={twit} alt="twitLogo" width="20" height={20}></img></a>
-        <button onClick={()=>window.location.reload(false)} className="nextBtn" variant="primary">next quote</button>
+        <button id="new-quote" onClick={()=>window.location.reload(false)} className="nextBtn" variant="primary">next quote</button>
       </div>
     </div>
     
