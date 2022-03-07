@@ -16,7 +16,7 @@
 .quoteSection{
   width: 70vw;
   /* min-height: 20vh; */
-  height: 60vh;
+  height: 65vh;
   position:relative;
   background-color: #012169;
   display:flex;
@@ -41,7 +41,7 @@
 .quoteSection::before{
   width:70vw;
   /* min-height: calc(30vh + 8px); */
-  height: calc(60vh + 10px);
+  height: calc(65vh + 10px);
   content:"";
   background-color:rgb(135, 106, 236);
   background-image: linear-gradient(90deg, rgba(133,126,246,1) 0%, rgba(49,46,103,1) 24%, rgba(191,190,242,1) 47%, rgba(41,41,187,1) 73%, rgba(28,217,255,1) 96%);
@@ -56,14 +56,14 @@
   text-align: right;
   font-style: italic;
   font-size: larger;
-  font-size:calc(900vw / 375);
+  font-size:calc(700vw / 375);
 }
 
 #text{
   font-family:  'Handlee', cursive;
   text-align: center;
   text-shadow: #0434a3;
-  font-size:calc(1200vw / 375);
+  font-size:calc(900vw / 375);
 }
 
 .nextBtn{
