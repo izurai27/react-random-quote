@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
-#quote-box{
+#quoteBox{
   width:70vw;
   margin:auto;
   display:flex;
@@ -63,7 +63,7 @@
   font-family:  'Handlee', cursive;
   text-align: center;
   text-shadow: #0434a3;
-  font-size:calc(1600vw / 375);
+  font-size:calc(1200vw / 375);
 }
 
 .nextBtn{
@@ -87,3 +87,6 @@ a{
   margin:20px;
 }
 
+.twitLogo{
+  color:rgba(41,41,187,1);
+}
