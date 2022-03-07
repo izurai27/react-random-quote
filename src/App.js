@@ -34,7 +34,7 @@ function App() {
       <Quote/>
       <div className="shareSection">
         <a href={url} target="blank" id="tweet-quote">tweet this quote</a>
-        <button className="nextBtn" variant="primary">next quote</button>
+        <button onClick={()=>window.location.reload(false)} className="nextBtn" variant="primary">next quote</button>
       </div>
     </div>
   );
