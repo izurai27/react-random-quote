@@ -1,20 +1,19 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import {quotes} from './quotes'
 
 function Quote (){
-  const showRandom = Math.floor(Math.random() * 102); 
+  const showRandom = Math.floor(Math.random() * quotes.length); 
   const newQuotes = quotes.filter(quote=>quote.id===showRandom);
   console.log(newQuotes);
   
   return(
-    <section>
-      
+    <section className='quoteSection'>
       {newQuotes.map((q)=>{
         const {id,quote,author}=q;
         return(
           
-        <div key={id}>
+        <div className='quoteBlock' key={id}>
           <p id="text">"{quote}"</p>
           <p id="author">{author}</p>
           <p>{id}</p>
@@ -37,7 +36,7 @@ function App() {
     
     <div id="quote-box">
       <Quote/>
-      <a href={url} target="_blank" id="tweet-quote">tweet this quote</a>
+      <a href={url} target="blank" id="tweet-quote">tweet this quote</a>
       <button type="button" id="new-quote">next quote</button>
     </div>
   );
