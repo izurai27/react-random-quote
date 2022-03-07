@@ -14,8 +14,8 @@ function Quote (){
         const {id,quote,author}=q;
         return(
           <div className="quoteBlock" key={id}>
-            <p id="text">"{quote}"</p>
-            <p id="author">{author}</p>
+            <p id="text">" {quote} "</p>
+            <p id="author">-- {author} --</p>
             {/* <p>{id}</p> */}
           </div>
         )    
