@@ -1,4 +1,55 @@
-.quoteBlock{
-  width:50vw;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Rancho&display=swap');
+
+#quote-box{
+  width:70vw;
   margin:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
 }
+
+.quoteSection{
+  width: 100%;
+}
+.quoteBlock{
+  /* width:100%; */
+  margin:auto;
+  border-top:1px double rgb(50, 50, 175);
+  border-bottom: 1px solid rgb(50, 50, 175);
+  
+}
+
+#author{
+  font-family: 'Lato', sans-serif;
+  text-align: right;
+}
+
+#text{
+  font-family: 'Rancho', cursive;
+  text-align: center;
+}
+
+.nextBtn{
+  width:fit-content;
+  display: inline-block;
+  border:none;
+  padding: 10px;
+  background-color: blue;
+  color:white;
+  border-radius:5px;
+}
+
+a{
+  display: inline-block;
+}
+
+.shareSection{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  margin:20px;
+}
+

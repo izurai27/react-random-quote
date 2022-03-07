@@ -1,6 +1,7 @@
-// import logo from './logo.svg';
-import './App.css';
-import {quotes} from './quotes'
+// import logo from "./logo.svg";
+import "./App.css";
+import {quotes} from "./quotes";
+// import Button from 'react-bootstrap/Button';
 
 function Quote (){
   const showRandom = Math.floor(Math.random() * quotes.length); 
@@ -8,25 +9,20 @@ function Quote (){
   console.log(newQuotes);
   
   return(
-    <section className='quoteSection'>
+    <section className="quoteSection">
       {newQuotes.map((q)=>{
         const {id,quote,author}=q;
         return(
-          
-        <div className='quoteBlock' key={id}>
-          <p id="text">"{quote}"</p>
-          <p id="author">{author}</p>
-          <p>{id}</p>
-        </div>
+          <div className="quoteBlock" key={id}>
+            <p id="text">"{quote}"</p>
+            <p id="author">{author}</p>
+            {/* <p>{id}</p> */}
+          </div>
         )    
       })}
     </section>
   )
 }
-
-
-
-
 
 
 function App() {
@@ -36,8 +32,10 @@ function App() {
     
     <div id="quote-box">
       <Quote/>
-      <a href={url} target="blank" id="tweet-quote">tweet this quote</a>
-      <button type="button" id="new-quote">next quote</button>
+      <div className="shareSection">
+        <a href={url} target="blank" id="tweet-quote">tweet this quote</a>
+        <button className="nextBtn" variant="primary">next quote</button>
+      </div>
     </div>
   );
 }

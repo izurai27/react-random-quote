@@ -6,9 +6,8 @@ import reportWebVitals from './reportWebVitals';
 // import {quotes} from './quotes'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  
+    <App />,
   document.getElementById('root')
 );
 
